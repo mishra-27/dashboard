@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DASHBOARD
+    </title>
+    <link rel="shortcut icon" href="/images/logo-.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- ******sidebar******* -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="./images/logo.png" alt="Logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-home'></i>
+                    <span>home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span>classes</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-category'></i>
+                    <span>courses</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            completed
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            explore
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-category'></i>
+                    <span>tasks</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            upcoming events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            completed
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            add tasks
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chart'></i>
+                    <span>progress</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-calendar'></i>
+                    <span>schedule</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--******main*******-->
+    <div class="main">
+        <div class="main-header">
+            <div class="main-user">
+                <div class="main-user-info">
+                    <ul class="sidebar-submenu">
+                        <a href="#" class="sidebar-menu-dropdown">
+                            <img src="./images/user-image.png" alt="User picture" class="profile-image">
+                            <span class="main-user-name">
+                                User</span>
+                            <div class="dropdown-icon"></div>
+                        </a>
+                        <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                            <li>
+                                <a href="#">
+                                    <i class='bx bx-user-circle'></i>
+                                    <span>account</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class='bx bx-cog'></i>
+                                    <span>settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="main-title">
+            Hey fam!
+        </div>
+        
+        <div class="main-content">
+            <div class="row">
+                <!--******card1*******-->
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <div class="counter">
+                            <div class="counter-title">
+                                abc
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    ***
+                                </div>
+                                <i class='bx bx-line-chart'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--******card2*******-->
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        
+                        <div class="counter">
+                            <div class="counter-title">
+                                attendance
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    100%
+                                </div>
+                                <i class='bx bx-line-chart'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--******card3*******-->
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <div class="counter">
+                            <div class="counter-title">
+                                class rank
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    ###
+                                </div>
+                                <i class='bx bx-line-chart'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <!--******task-card*******-->
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box f-height">
+                        <div class="box-header">
+                            today's tasks
+                        </div>
+                        <div class="box-body">
+                            <ul class="task-list">
+                                <ul class="task-list-item">
+                                    <div class="item-info">
+                                        <img src="./images/task.png" alt="task image">
+                                        <div class="item-name">
+                                            <div class="task-name">Java</div>
+                                            <div class="text-second">Lecture</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Regular</div>
+                                        <div class="task-time">12:00 pm</div>
+                                    </div>
+                                </ul>
+                                <ul class="task-list-item">
+                                    <div class="item-info">
+                                        <img src="./images/task.png" alt="task image">
+                                        <div class="item-name">
+                                            <div class="task-name">UI-UX</div>
+                                            <div class="text-second">Lab</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Regular</div>
+                                        <div class="task-time">1:00 pm</div>
+                                    </div>
+                                </ul>
+                                <ul class="task-list-item">
+                                    <div class="item-info">
+                                        <img src="./images/task.png" alt="task image">
+                                        <div class="item-name">
+                                            <div class="task-name">Networking</div>
+                                            <div class="text-second">Lecture</div>
+                                        </div>
+                                    </div>
+                                    <div class="item-sale-info">
+                                        <div class="text-second">Extra</div>
+                                        <div class="task-time">5:00 pm</div>
+                                    </div>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--******donut-chart*******-->
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="box f-height">
+                        <div class="box-header">
+                            spent time
+                        </div>
+                        <div class="box-body">
+                            <div id="category-chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--******line-chart*******-->
+                <div class="col-5 col-md-12 col-sm-12">
+                    <div class="box f-height">
+                        <div class="box-header">
+                            skills
+                        </div>
+                        <div class="box-body">
+                            <div id="skill-chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--******hw-card*******-->
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="box f-height">
+                        <div class="box-header">
+                             Homework
+                            </div>
+                            <div class="box-body">
+                                <ul class="task-list">
+                                    <ul class="task-list-item">
+                                        <div class="item-info">
+                                            <img src="./images/task.png" alt="task image">
+                                            <div class="item-name">
+                                                <div class="task-name">Java</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">due</div>
+                                            <div class="task-time">today</div>
+                                        </div>
+                                    </ul>
+                                    <ul class="task-list-item">
+                                        <div class="item-info">
+                                            <img src="./images/task.png" alt="task image">
+                                            <div class="item-name">
+                                                <div class="task-name">UI-UX</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">due</div>
+                                            <div class="task-time">tomorrow</div>
+                                        </div>
+                                    </ul>
+                                    <ul class="task-list-item">
+                                        <div class="item-info">
+                                            <img src="./images/task.png" alt="task image">
+                                            <div class="item-name">
+                                                <div class="task-name">Networking</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">submitted</div>
+                                            <div class="task-time">xxxx</div>
+                                        </div>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--******goal-card*******-->
+                    <div class="col-3 col-md-6 col-sm-12">
+                        <div class="box f-height">
+                            <div class="box-header">
+                                Committed Goals
+                            </div>
+                            <div class="box-body">
+                                <ul class="task-list">
+                                    <ul class="task-list-item">
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                <div class="task-name">Java</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">in progress</div>
+                                            <div class="task-time">50%</div>
+                                        </div>
+                                    </ul>
+                                    <ul class="task-list-item">
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                <div class="task-name">UI-UX</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">unattempted</div>
+                                            <div class="task-time">0%</div>
+                                        </div>
+                                    </ul>
+                                    <ul class="task-list-item">
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                <div class="task-name">Networking</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">done</div>
+                                            <div class="task-time">100%</div>
+                                        </div>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--******pie-chart*******-->
+                    <div class="col-5 col-md-12 col-sm-12">
+                        <div class="box f-height">
+                            <div class="box-header">
+                                goals
+                            </div>
+                            <div class="box-body">
+                                <div id="goal-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--******course-card*******-->
+                    <div class="col-12">
+                    <div class="box">
+                        <div class="box-header">
+                            Tracking Courses
+                        </div>
+                        <div class="box-body overflow-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>C.ID</th>
+                                        <th>Skill</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>Express</td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="course-status course-ongoing">
+                                                Ongoing
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>React</td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="course-status course-finished">
+                                                Finished
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>Illustrator</td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="course-status course-finished">
+                                                Finished
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
