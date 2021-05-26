@@ -43,7 +43,7 @@ let skill_options = {
         name: "Practice ",
         data: [20, 30, 10, 20, 16, 40, 20, 51, 10]
     }],
-    colors: undefined,
+    colors: ['#FFA500','orangered'],
     chart: {
         height: 350,
         type: 'line',
@@ -59,14 +59,6 @@ let skill_options = {
     },
     legend: {
         position: 'top'
-    },
-    theme: {
-      monochrome: {
-        enabled: true,
-        color: '#FFA500',
-        shadeTo: 'light',
-        shadeIntensity: 0.6
-      }
     }
 }
 

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DASHBOARD
+    </title>
+    <link rel="shortcut icon" href="/images/logo-.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- ******sidebar******* -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="./images/logo.png" alt="Logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-home'></i>
+                    <span>home</span>
+                </a>
+            </li>
+            <li>
+                <a href="classes.html">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span>classes</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="courses.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-category'></i>
+                    <span>courses</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="courses.html">
+                            completed
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.html">
+                            explore
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="tasks.html" class="sidebar-menu-dropdown">
+                    <i class='bx bx-category'></i>
+                    <span>tasks</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="tasks.html">
+                            upcoming events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html">
+                            completed
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tasks.html">
+                            add tasks
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="progress.html">
+                    <i class='bx bx-chart'></i>
+                    <span>progress</span>
+                </a>
+            </li>
+            <li>
+                <a href="schedule.html">
+                    <i class='bx bx-calendar'></i>
+                    <span>schedule</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--******main*******-->
+    <div class="main">
+        <div class="main-header">
+            <div class="main-user">
+                <div class="main-user-info">
+                    <ul class="sidebar-submenu">
+                        <a href="#" class="sidebar-menu-dropdown">
+                            <img src="./images/user-image.png" alt="User picture" class="profile-image">
+                            <span class="main-user-name">
+                                User</span>
+                            <div class="dropdown-icon"></div>
+                        </a>
+                        <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                            <li>
+                                <a href="#">
+                                    <i class='bx bx-user-circle'></i>
+                                    <span>account</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class='bx bx-cog'></i>
+                                    <span>settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="main-title">
+            Hey fam!
+        </div>
+        
+        <div class="main-content">
+
+
+            <div class="row">
+                
+                    <!--******course-card*******-->
+                    <div class="col-12">
+                    <div class="box">
+                        <div class="box-header">
+                            Tracking Courses
+                        </div>
+                        <div class="box-body overflow-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>C.ID</th>
+                                        <th>Skill</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>Express</td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="course-status course-ongoing">
+                                                Ongoing
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>React</td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="course-status course-finished">
+                                                Finished
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#2345</td>
+                                        <td>Illustrator</td>
+                                        <td>2021-05-09</td>
+                                        <td>
+                                            <span class="course-status course-finished">
+                                                Finished
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

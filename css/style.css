@@ -242,11 +242,13 @@ a {
 .box {
     background-color: var(--box-bg);
     padding: 20px;
-    border: 0.5px solid var(--border-color);
-    border-radius: var(--box-border-radius);
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
 }
 
 .box-hover:hover {
+    border: 0.5px solid var(--border-color);
+    border-radius: var(--box-border-radius);
     border-color: var(--main-color);
 }
 
@@ -352,7 +354,6 @@ table thead tr {
 table th,
 table td {
     padding: 20px 0;
-    border-bottom: 1px solid var(--border-color);
 }
 
 .course-status {
@@ -362,33 +363,13 @@ table td {
 }
 
 .course-finished {
-    color: #2a59d1;
-    background-color: rgba(62, 121, 247, 0.1);
+    color: orange;
+    background-color: rgba(250, 182, 56, 0.1);
 }
 
 .course-ongoing {
-    color: #00ab6f;
-    background-color: rgba(4, 209, 130, 0.1);
-}
-
-.payment-status {
-    display: flex;
-    align-items: center;
-}
-
-.payment-status .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.payment-paid .dot {
-    background-color: #04d182;
-}
-
-.payment-pending .dot {
-    background-color: #ffc542;
+    color: orangered;
+    background-color: rgba(255, 69, 0, 0.1);
 }
 
 .overflow-scroll {
