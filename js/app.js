@@ -14,6 +14,7 @@ document.querySelectorAll('.sidebar-submenu').forEach(e => {
     }
 })
 
+
 let category_options = {
     series: [44, 55, 41, 17],
     labels: ['X', 'Y', 'z', 'W'],
@@ -22,10 +23,13 @@ let category_options = {
     },
     colors: undefined
     ,
+    stroke: {
+      width: 0
+    },
   theme: {
     monochrome: {
       enabled: true,
-      color: '#FFA500',
+      color: '#ff4500',
       shadeTo: 'light',
       shadeIntensity: 0.6
     }
@@ -98,7 +102,7 @@ var goal_options = {
   theme: {
     monochrome: {
       enabled: true,
-      color: '#FFA500',
+      color: '#ff4500',
       shadeTo: 'light',
       shadeIntensity: 0.6
     }
