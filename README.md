@@ -13,7 +13,7 @@
     Boxicons: https://boxicons.com/
     Flaticon: https://www.flaticon.com/
     Freepik: https://www.freepik.com/
-    Images: Adobe Illustrator used for further specifictions
+    Images: Adobe Illustrator used for further specifications
 
 # Deployed Version
 
